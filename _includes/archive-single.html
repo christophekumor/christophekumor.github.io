@@ -33,7 +33,7 @@
     {% if post.read_time %}
       <p class="page__meta">
         {% if site.custom.landingpage.publisheddate and include.type != "grid" %}
-          <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%Y/%m/%d" }} | 
+          <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%Y/%m/%d" }} || 
         {% endif %}
         <i class="fa fa-clock-o" aria-hidden="true">
         </i>
