@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Hello W0rld !!!"
-excerpt: "Test excerpt"
+excerpt: "Hop !"
 permalink:
 tags:
     - info
