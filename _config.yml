@@ -244,3 +244,19 @@ defaults:
       comments: # true
       share: true
       related: true
+
+#Custom
+#Thanks to Lazywinadmin
+#https://lazywinadmin.github.io/
+
+# post with future date won't show'
+future: false
+
+# Show date on main page
+custom:
+  landingpage:
+    publisheddate: true
+    #postlogo: false
+  post:
+    publisheddate: true
+edit: false
