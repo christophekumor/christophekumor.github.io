@@ -19,8 +19,8 @@ header:
 
 ## First Steps
 
-Voila ma premiere ligne... 
-My verry first Line..
+Voici ma premiere ligne... 
+My very first Line..
 English or French .. don't know yet..Both perhaps...
 
 
