@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "Christophe Kumor"
   avatar           : "/assets/images/moi.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "I am me."
   location         : "Lille, France"
   email            :
   uri              :
@@ -244,4 +244,3 @@ defaults:
       comments: # true
       share: true
       related: true
-      
