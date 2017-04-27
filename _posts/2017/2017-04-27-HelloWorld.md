@@ -11,9 +11,9 @@ published: true
 comments: true
 author_profile: false
 header:
-  image: images/headers/france02_1436x500.jpg
+  image: images/headers/HelloWorld_1436x200.png
   caption: ""
-  teaserlogo: /assets/images/linux.png
+  teaserlogo: 
 ---
 {% include toc title="Table of content" icon="file-text" %}
 
