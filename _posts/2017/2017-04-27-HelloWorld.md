@@ -11,7 +11,7 @@ published: true
 comments: true
 author_profile: false
 header:
-  image: images/headers/HelloWorld_1436x200.png
+  image: assets/images/headers/HelloWorld_1436x200.png
   caption: ""
   teaserlogo: 
 ---
