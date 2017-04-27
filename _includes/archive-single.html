@@ -30,15 +30,16 @@
         <a href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-              <!--- Include Published date-->
-          <p class="page__meta">
-          {% if site.custom.landingpage.publisheddate and include.type != "grid" %}
-          <i class="fa fa-calendar" aria-hidden="true"></i> {{ page.date | date: "%Y/%m/%d" }} | 
-          {% endif %}
-          {% if page.read_time %}
-          <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}
-          {% endif %}
-          </p>
+    {% if post.read_time %}
+      <p class="page__meta">
+        {% if site.custom.landingpage.publisheddate and include.type != "grid" %}
+          <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%Y/%m/%d" }} | 
+        {% endif %}
+        <i class="fa fa-clock-o" aria-hidden="true">
+        </i>
+        {% include read-time.html %}
+      </p>
+    {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>
