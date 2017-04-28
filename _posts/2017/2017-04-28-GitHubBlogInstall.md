@@ -111,7 +111,7 @@ Vers le bas de la page, vous aurez l'information de publication de votre site :
 
 ![image-center](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step11.jpg)
 
->ici on voit clairement ce qui ce passe lorsque l'on ne repecte pas le formalisme dont j'ai parlé à l'etape du choix de nom de repository ou lorsqu'un repository "site/blog" existe deja, il va publier votre "site/blog" comme un sous repertoire de votre "site/blog" principal.
+> ici on voit clairement ce qui ce passe lorsque l'on ne repecte pas le formalisme dont j'ai parlé à l'etape du choix de nom de repository ou lorsqu'un repository "site/blog" existe deja, il va publier votre "site/blog" comme un sous repertoire de votre "site/blog" principal.
 
 And Voila :sparkles: ! vous etes en ligne !!
 
