@@ -62,7 +62,7 @@ Pour finir cliquer sur :
 
 ![Cliquez sur le bouton Create repository](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step2.jpg)
 
-## 2. petite config
+## 2. Petite config
 
 Vous allez revenir sur votre repo fraichement créé, Je vous conseil d'ajouter un lien vers votre blog directement sur la page de votre repo, pour cela dans la barre de Titre du repo, cliquez sur le bouton "Edit":
 
@@ -102,7 +102,7 @@ Une fois revenu sur la page de votre repository, vous avez le message avec le ch
 
 ![Information theme appliqué](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step10.jpg)
 
-## 4. vérification
+## 4. Vérification
 
 Pour vérifier l'url de votre Blog, il faut aller à nouveau dans l'onglet "setting"
 
