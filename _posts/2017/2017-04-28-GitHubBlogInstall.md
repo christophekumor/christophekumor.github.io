@@ -25,7 +25,7 @@ Je vais essayer dans cet article de vous présenter la mise en place pas à pas 
 
 il n'y aura pas forcément outs les petis details ni de la configuration en profondeur, mais à minima comment creer son blog et qu'il soit hebergé par Github.
 
-Dédicasse à <b>Thierry Degols</b> ;-) j'espere répondre à tes attentes. 
+Dédicace  à <b>Thierry Degols</b> ;-) j'espere répondre à tes attentes. 
 
 # Création
 
