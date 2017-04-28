@@ -52,6 +52,17 @@
 
 .page__content {
 
+  img {
+    width: 100%;
+    border-radius: $border-radius;
+    -webkit-transition: $global-transition;
+    transition: $global-transition;
+      border: 5px solid #fff;
+  -moz-box-shadow: 8px 8px 12px #aaa; 
+  -webkit-box-shadow: 8px 8px 12px #aaa; 
+  box-shadow: 8px 8px 12px #555; 
+  }
+  
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
