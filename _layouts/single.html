@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+{% if post.tags contains 'draft' %}
+  <!--do nothing -->
+{% else %} 
+  <!-- This is not a draft. Allow post to be displayed in blog lists and RSS feed --> 
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
@@ -78,3 +82,4 @@ layout: default
     </div>
   {% endif %}
 </div>
+{% endif %}

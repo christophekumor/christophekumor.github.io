@@ -4,11 +4,11 @@ title: "Mettre en place son Blog sur GitHub"
 excerpt: "Pas à Pas pour la mise en place d'un blog sur github"
 permalink:
 tags:
-    - blog
+    - draft
 categories:
     - GitHub
     - Tutorial
-published: false
+published: true
 comments: true
 author_profile: false
 header:
