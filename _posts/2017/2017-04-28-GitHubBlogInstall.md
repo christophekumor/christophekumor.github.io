@@ -45,6 +45,9 @@ On arrive alors dans le process normal de création d'un "repository"
 
 ![image-center](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step1.jpg)
 
+
+<p><img src="/assets/images/articles/2017-04-28-GitHubBlogInstall/Step1.jpg"></p>
+
 Il faut :
 - un nom. Exemple : christophekumor.github.io
 
@@ -120,6 +123,6 @@ Github supporte nativement le language Jekyll pour la conception de vos pages ou
 
 En revanche voici le lien vers le site officiel : 
 
-> <a href='https://jekyllrb.com/' target = '_blank' alt = 'Lien vers le site de jekyll'>![image-center](/assets/images/jekyll.png)</a>
+<a href='https://jekyllrb.com/' target = '_blank' alt = 'Lien vers le site de jekyll'>![image-center](/assets/images/jekyll.png)</a>
 
 
