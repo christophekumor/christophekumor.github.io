@@ -28,7 +28,9 @@ Dédicasse à <b>Thierry Degols</b> ;-) j'espere répondre à tes attentes.
 
 ## GO
 
-Pour creer un blog sur Github la premiere chose à faire est de creer un nouveau "repositorie"
+1. Creation d'un "repository"
+
+Pour creer un blog sur Github la premiere chose à faire est de creer un nouveau "repository"
 
 Sur sa page Github, on se rend donc dans "Repositories" 
 
@@ -39,7 +41,7 @@ puis on clique sur le bouton "New" :
 
 ![image-center](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step0b.jpg)
 
-On arrive alors dans le process normal de création d'un "repositorie"
+On arrive alors dans le process normal de création d'un "repository"
 
 ![image-center](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step1.jpg)
 
@@ -51,13 +53,15 @@ il faut respecter ce format de nom cela permetra d'avoir une url en https://chri
 <a href='https://help.github.com/articles/user-organization-and-project-pages/' target = '_blank'>Plus d'informations..
 </a>
 
-- Une description : Apparaitra juste dans le "repositorie" mais c'est toujours plus sympas.
+- Une description : Apparaitra juste dans le "repository" mais c'est toujours plus sympas.
 - Choisir public ou Private. Private étant payant. à vous de voir
 - Cocher "Initialize this repository with a README" 
 
 Pour finir cliquer sur :
 
 ![image-center](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step2.jpg)
+
+2. petite config
 
 Vous allez revenir sur votre repo fraichement créé, Je vous conseil d'ajouter un lien vers votre blog directement sur la page de votre repo, pour cela dans la barre de Titre du repo, cliquez sur le bouton "Edit":
 
@@ -72,6 +76,8 @@ Il ne reste plus qu'a sauvegarder avec le bouton "Save"
 Vous voila revenu sur la page d'acceuil de votre repository, avec un jolie lien vers votre blog.
 
 ![image-center](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step5.jpg)
+
+3. Choix d'un theme
 
 Ce n'est pas fini, il vous faut choisir un theme pour votre site, pour cela toujours dans votre nouveau repository, vous cliquez sur l'onglet "Settings"
 
@@ -95,6 +101,8 @@ Une fois revenu sur la page de votre repository, vous avez le message avec le ch
 
 ![image-center](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step10.jpg)
 
+4. vérification
+
 Pour vérifier l'url de votre Blog, il faut aller à nouveau dans l'onglet "setting"
 
 ![image-center](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step6.jpg)
@@ -103,15 +111,15 @@ Vers le bas de la page, vous aurez l'information de publication de votre site :
 
 ![image-center](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step11.jpg)
 
-ici on voit clairement ce qui ce passe lorsque l'on ne repecte pas le formalisme dont j'ai parlé à l'etape du choix de nom de repository ou lorsqu'un repository "site/blog" existe deja, il va publier votre "site/blog" comme un sous repertoire de votre "site/blog" principal.
+>ici on voit clairement ce qui ce passe lorsque l'on ne repecte pas le formalisme dont j'ai parlé à l'etape du choix de nom de repository ou lorsqu'un repository "site/blog" existe deja, il va publier votre "site/blog" comme un sous repertoire de votre "site/blog" principal.
 
-And Voila ! vous etes en ligne !!
+And Voila :sparkles: ! vous etes en ligne !!
 
 ## CONCLUSION
-Github supporte nativement le language Jekyll pour la conception de vos pages ou de vos posts, cela ne fera pas l'object de ce tutorial.
-Etant moi meme en plein apprentissage, je vais avoir du mal à donner des conseils..
+Github supporte nativement le language Jekyll pour la conception de vos pages ou de vos posts, je n'en ai pas du tout parlé dans ce post car etant moi meme en plein apprentissage, je vais avoir du mal à donner des conseils..
 
 En revanche voici le lien vers le site officiel : 
 
-<a href='https://jekyllrb.com/' target = '_blank' alt = 'Lien vers le site de jekyll'>![image-left](/assets/images/jekyll.png)</a>
+> <a href='https://jekyllrb.com/' target = '_blank' alt = 'Lien vers le site de jekyll'>![image-center](/assets/images/jekyll.png)</a>
+
 
