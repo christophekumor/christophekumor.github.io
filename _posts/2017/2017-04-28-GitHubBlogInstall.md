@@ -12,7 +12,7 @@ published: true
 comments: true
 author_profile: false
 header:
-  image: assets/images/headers/HelloWorld_1436x200.png
+  image: assets/images/headers/GithubPages_1436x500.png
   caption: ""
   teaserlogo: 
 ---
@@ -49,9 +49,7 @@ On arrive alors dans le process normal de création d'un "repository"
 Il faut :
 - un nom. Exemple : christophekumor.github.io
 
-il faut respecter ce format de nom cela permetra d'avoir une url en https://christophekumor.github.io
-
-<a href='https://help.github.com/articles/user-organization-and-project-pages/' target = '_blank'>Plus d'informations..
+il faut respecter ce format de nom cela permetra d'avoir une url en https://christophekumor.github.io <a href='https://help.github.com/articles/user-organization-and-project-pages/' target = '_blank'>Plus d'informations..
 </a>
 
 - Une description : Apparaitra juste dans le "repository" mais c'est toujours plus sympas.
@@ -114,7 +112,7 @@ Vers le bas de la page, vous aurez l'information de publication de votre site :
 
 > ici on voit clairement ce qui ce passe lorsque l'on ne repecte pas le formalisme dont j'ai parlé à l'etape du choix de nom de repository ou lorsqu'un repository "site/blog" existe deja, il va publier votre "site/blog" comme un sous repertoire de votre "site/blog" principal.
 
-And Voila :sparkles: ! vous etes en ligne !!
+And Voila ! vous etes en ligne !!
 
 # CONCLUSION
 Github supporte nativement le language Jekyll pour la conception de vos pages ou de vos posts, je n'en ai pas du tout parlé dans ce post car etant moi meme en plein apprentissage, je vais avoir du mal à donner des conseils..
