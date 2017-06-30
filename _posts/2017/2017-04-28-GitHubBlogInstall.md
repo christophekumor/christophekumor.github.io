@@ -1,7 +1,7 @@
 ---
-layout: single
+layout: post
 title: "Mettre en place son Blog sur GitHub"
-excerpt: "Pas à Pas pour la mise en place d'un blog sur github"
+description: "Pas à Pas pour la mise en place d'un blog sur github"
 permalink:
 tags:
    - blog
@@ -9,15 +9,12 @@ tags:
 categories:
    - GitHub
    - Tutorial
-published: true
-comments: true
-author_profile: false
-header:
- image: assets/images/headers/GithubPages_1436x500.png
+image:
+ feature: headers/GithubPages_1436x500.png
+ categorie: categories/Github_300x300.png
  caption: ""
  teaserlogo:
 ---
-{% include toc title="Table of content" icon="file-text" %}
 
 # Introduction
 
@@ -35,16 +32,16 @@ Pour créer un blog sur Github la première chose à faire est de créer un nouv
 
 Sur sa page Github, on se rend donc dans "Repositories"
 
-![Select Repository](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step0a.jpg)
+![Select Repository](/images/articles/2017-04-28-GitHubBlogInstall/Step0a.jpg)
 
 
 puis on clique sur le bouton "New" :
 
-![New](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step0b.jpg)
+![New](/images/articles/2017-04-28-GitHubBlogInstall/Step0b.jpg)
 
 On arrive alors dans le processus normal de création d'un "repository"
 
-![Create a new repository](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step1.jpg)
+![Create a new repository](/images/articles/2017-04-28-GitHubBlogInstall/Step1.jpg)
 
 
 Il faut :
@@ -59,57 +56,57 @@ il faut respecter ce format de nom cela permetra d'avoir une url en https://chri
 
 Pour finir cliquer sur :
 
-![Cliquez sur le bouton Create repository](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step2.jpg)
+![Cliquez sur le bouton Create repository](/images/articles/2017-04-28-GitHubBlogInstall/Step2.jpg)
 
 ## 2. Petite config
 
 Vous allez revenir sur votre repo fraîchement créé, Je vous conseil d'ajouter un lien vers votre blog directement sur la page de votre repo, pour cela dans la barre de Titre du repo, cliquez sur le bouton "Edit":
 
-![Bandeau](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step3.jpg)
+![Bandeau](/images/articles/2017-04-28-GitHubBlogInstall/Step3.jpg)
 
 Ajoutez le lien en https (ne pas faire comme sur la photo ci dessous ou j'avais juste mis http) de votre blog, en principe si vous avez bien utilisé le formalisme lors de la déclaration, celui ci doit etre de la forme https://votrenomdecomptegithub.github.io
 
 Il ne reste plus qu'a sauvegarder avec le bouton "Save"
 
-![Edit your site link](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step4.jpg)
+![Edit your site link](/images/articles/2017-04-28-GitHubBlogInstall/Step4.jpg)
 
 Vous voilà revenu sur la page d'accueil de votre repository, avec un jolie lien vers votre blog.
 
-![Résultat de l'éditon](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step5.jpg)
+![Résultat de l'éditon](/images/articles/2017-04-28-GitHubBlogInstall/Step5.jpg)
 
 ## 3. Choix d'un thème
 
 Ce n'est pas fini, il vous faut choisir un thème pour votre site, pour cela toujours dans votre nouveau repository, vous cliquez sur l'onglet "Settings"
 
-![Settings](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step6.jpg)
+![Settings](/images/articles/2017-04-28-GitHubBlogInstall/Step6.jpg)
 
 Puis vers le bas de la page, cliquez sur "Choose a theme"
 
-![Cliquez sur le bouton Choose a theme](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step7.jpg)
+![Cliquez sur le bouton Choose a theme](/images/articles/2017-04-28-GitHubBlogInstall/Step7.jpg)
 
 Faite votre choix parmis les thèmes proposés par github via les vignettes du haut de la page, une fois votre choix effectué, cliquez sur le bouton "Select thème"
 
-![Choisissez un theme](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step8.jpg)
+![Choisissez un theme](/images/articles/2017-04-28-GitHubBlogInstall/Step8.jpg)
 
 Il se peut que l'on vous demande de modifier le README.md de votre site, vous pouvez faire cancel et le faire plus tard..
 
 Pour les besoins du tutorial j'ai refait un repo de test, donc ici on me propose de modifier le Readme.md. J'ai donc fait cancel
 
-![Cancel Edition README.md](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step9.jpg)
+![Cancel Edition README.md](/images/articles/2017-04-28-GitHubBlogInstall/Step9.jpg)
 
 Une fois revenu sur la page de votre repository, vous avez le message avec le choix du thème qui a été appliqué
 
-![Information theme appliqué](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step10.jpg)
+![Information theme appliqué](/images/articles/2017-04-28-GitHubBlogInstall/Step10.jpg)
 
 ## 4. Vérification
 
 Pour vérifier l'url de votre Blog, il faut aller à nouveau dans l'onglet "setting"
 
-![Settings](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step6.jpg)
+![Settings](/images/articles/2017-04-28-GitHubBlogInstall/Step6.jpg)
 
 Vers le bas de la page, vous aurez l'information de publication de votre site :
 
-![Lien de votre site](/assets/images/articles/2017-04-28-GitHubBlogInstall/Step11.jpg)
+![Lien de votre site](/images/articles/2017-04-28-GitHubBlogInstall/Step11.jpg)
 
 > ici on voit clairement ce qui se passe lorsque l'on ne respecte pas le formalisme dont j'ai parlé à l'étape du choix de nom de repository ou lorsqu'un repository "site/blog" existe déjà, il va publier votre "site/blog" comme un sous répertoire de votre "site/blog" principal.
 
@@ -120,4 +117,4 @@ Github supporte nativement le langage Jekyll pour la conception de vos pages ou 
 
 En revanche voici le lien vers le site officiel :
 
-<a href='https://jekyllrb.com/' target = '_blank' alt = 'Lien vers le site de jekyll'>![Site de Jekyll](/assets/images/jekyll.png)</a>
+<a href='https://jekyllrb.com/' target = '_blank' alt = 'Lien vers le site de jekyll'>![Site de Jekyll](/images/jekyll.png)</a>

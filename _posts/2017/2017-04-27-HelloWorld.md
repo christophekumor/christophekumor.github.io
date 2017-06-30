@@ -1,21 +1,17 @@
 ---
-layout: single
+layout: post
 title: "Hello W0rld !!!"
-excerpt: "Hop !"
 permalink:
 tags:
     - info
 categories:
     - blabla
-published: true
-comments: true
-author_profile: false
-header:
-  image: assets/images/headers/HelloWorld_1436x200.png
+image:
+  feature: headers/HelloWorld_1436x200.png
+  categorie: categories/Speech_300x300.png
   caption: ""
   teaserlogo: 
 ---
-{% include toc title="Table of content" icon="file-text" %}
 
 ## First Steps
 
