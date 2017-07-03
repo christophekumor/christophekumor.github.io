@@ -65,7 +65,7 @@ PS C:\> Mavar$i
     # +          ~~
     # Jeton inattendu « $i » dans l’expression ou l’instruction.
 ```
-Bon je vais arrêter là pour les exemples qui ne fonctionnent pas... Mais il y en a plein d'autres.
+Bon je vais arrêter là pour les exemples qui ne fonctionnent pas... Mais il y en a plein d'autres :stuck_out_tongue_winking_eye:
 
 # Deux environnements
 Je vais distinguer 2 cas de figure pour cet article. 
@@ -218,3 +218,51 @@ Voia Voila...
 Dans cet article, je n'ai pas eu la volonté d'être exhaustif, il y a donc peut-être d'autres méthodes... Ce que je sais c'est que ce que je vous propose fonctionne.
 Cependant, si vous avez envie de partager d'autres méthode, n'hésitez pas, je les ajouterai, n'hésitez pas non plus à laisser un commentaire, cela fait toujours plaisir d'avoir un retour.
 
+# Update 
+**@Thierry Degols** m'a fait remarquer qu'une solution de contournement est possible, pour les variables avec doubles quotes, en utilisant `$($item.name)`
+
+Soit :
+```powershell
+write-host "Je fais une $($item.name) avec une variable"
+```
+A vous de choisir entre ça et le `-f`, en toute honnêteté j'utilise autant les doubles quotes que le -f, cela dépend de la variable et du contexte.
+
+**@Nicolas BAUDIN** amène un élément supplémentaire concernant la récupération du contenu d'une variable avec `Get-Variable`. En effet avec cette commande, les wildcard sont possible
+
+exemple :
+```powershell
+$vSwitch1 = "test"
+$AllvSwitch = Get-Variable -Name "vSwitch?" -ValueOnly
+# ? remplace un caractère après vSwitch
+```
+Ou
+```powershell
+$vSwitch1 = "test"
+$AllvSwitch = Get-Variable -Name "vSwitch*" -ValueOnly
+#* remplace tous les caractères qui suivent vSwitch
+```
+
+Attention, **Attention**, **Attention**, l'utilisation de wildcard peut amener à avoir des valeurs que l'on ne souhaite pas... En effet cela va récupérer toutes les valeurs de votre scope.
+
+Partons du principe que l'on a lancé une fois chacun des tests précédent
+
+Si je lance :
+
+```powershell
+$vSwitch10 = "test"
+$AllvSwitch = Get-Variable -Name "vSwitch?" -ValueOnly
+```
+
+En principe il ne devrait rien me donner vu qu'il y a deux caractères après vSwitch, or là il me donne :
+
+```powershell
+PS C:\> $vSwitch10 = "test"
+$AllvSwitch = Get-Variable -Name "vSwitch?" -ValueOnly
+$AllvSwitch
+test
+```
+
+Pourquoi ? car il a encore en "mémoire" l'ancienne variable $vSwitch1, donc là il ne nous donne pas la valeur de $vSwitch10 mais celle de vSwitch1.
+
+Donc vraiment à utiliser en connaissance de cause... 
+Et si vous n'avez pas compris mon explication c'est qu'il ne faut pas utiliser les Wildcards. eheh.
