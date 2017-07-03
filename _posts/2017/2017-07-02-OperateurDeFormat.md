@@ -101,3 +101,11 @@ et ainsi de suite ..
 # Conclusion
 Dans cet article je n'ai traité que de la mise en place de variable dans des chaines de caractère mais l 'opérateur -f peut faire beaucoup plus de choses, je vous invite à regarder le lien suivant : <a href='https://ss64.com/ps/syntax-f-operator.html' target = '_blank'>-f Format operator</a>
 
+# Update 
+@Thierry Degols m'a fait remarquer qu'une solution de contournement est possible, pour les variables avec doubles quotes, en utilisant `$($item.name)`
+
+Soit :
+```powershell
+write-host "Je fais une $($item.name) avec une variable"
+```
+A vous de choisir entre ça et le `-f`, en toute honnêteté j'utilise autant les doubles quotes que le -f, cela dépend de la variable et du contexte.

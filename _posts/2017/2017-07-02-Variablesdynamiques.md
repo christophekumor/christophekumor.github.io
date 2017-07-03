@@ -65,7 +65,7 @@ PS C:\> Mavar$i
     # +          ~~
     # Jeton inattendu « $i » dans l’expression ou l’instruction.
 ```
-Bon je vais arrêter là pour les exemples qui ne fonctionnent pas... Mais il y en a plein d'autres :stuck_out_tongue_winking_eye:
+Bon je vais arrêter là pour les exemples qui ne fonctionnent pas... Mais il y en a plein d'autres.
 
 # Deux environnements
 Je vais distinguer 2 cas de figure pour cet article. 
@@ -214,7 +214,7 @@ Pour récupérer une valeur avec un nom de variable dynamique
 ```
 
 # Conclusion
-Voia Voila...:relaxed:
+Voia Voila...
 Dans cet article, je n'ai pas eu la volonté d'être exhaustif, il y a donc peut-être d'autres méthodes... Ce que je sais c'est que ce que je vous propose fonctionne.
 Cependant, si vous avez envie de partager d'autres méthode, n'hésitez pas, je les ajouterai, n'hésitez pas non plus à laisser un commentaire, cela fait toujours plaisir d'avoir un retour.
 
