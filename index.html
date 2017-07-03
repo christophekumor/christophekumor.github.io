@@ -9,7 +9,16 @@ image:
   credit: 
   creditlink: 
 ---
-
+ <!--<div class="grid" id="searchBar">
+         <div id="search">
+             <form role="search" method="get" action="{{ site.url }}//search/">
+                 <input id="searchString" name="searchString"
+                        placeholder="Be a Better Developer, etc." type="text">
+                 <input id="searchButton" name="googleSearchName" type="submit" value="Search">
+             </form>
+         </div>
+</div>
+-->
 {% for post in paginator.posts %}
 <article class="hentry">
   <header>
@@ -19,7 +28,8 @@ image:
       </div><!-- /.entry-image -->
     {% endif %}
     <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
+      
+      <span class="entry-date date published updated"><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span>&nbsp;&nbsp;<i class="fa fa-user" aria-hidden="true"></i><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span>
       {% if site.reading_time %}
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>

@@ -1,7 +1,7 @@
 # Menu navigation links
 
-#- title: Theme Setup
-#  url: /theme-setup/
+- title: RSS
+  url: /feed.xml
 
 #- title: External Link
   #url: http://mademistakes.com

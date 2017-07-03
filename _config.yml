@@ -40,10 +40,11 @@ future:      false  # publish future dated posts --  true, false (default)
 highlighter: rouge
 markdown:    kramdown
 gems:
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-gist
-  - jekyll-feed
+
 sass:
   sass_dir: _sass
   style: compressed

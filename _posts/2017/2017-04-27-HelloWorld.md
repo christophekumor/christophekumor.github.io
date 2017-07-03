@@ -7,7 +7,7 @@ tags:
 categories:
     - blabla
 image:
-  feature: headers/HelloWorld_1436x200.png
+  feature: headers/HelloWorld_1436x500.png
   categorie: categories/Speech_300x300.png
   caption: ""
   teaserlogo: 
