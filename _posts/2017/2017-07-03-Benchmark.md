@@ -1,7 +1,7 @@
 ---
 layout : post
 title: "Benchmark ou comment chronométrer"
-description: "Comment tester l'exécution de votre code"
+description: "Comment tester le temps d'exécution de votre code"
 permalink:
 tags:
    - Powershell
