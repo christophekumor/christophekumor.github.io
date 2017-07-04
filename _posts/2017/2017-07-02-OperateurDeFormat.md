@@ -88,7 +88,7 @@ Je fais une phrase avec une variable
 Deux choses à remarquer :
 
 1. On peut utiliser plusieurs fois un marqueur dans la chaine. 
-Dans l'exemple du dessus, le `{0}` a été utilisé 2 fois.
+Dans l'exemple du dessus, le `{1}` a été utilisé 2 fois.
 
 2. J'ai volontairement mis le `{1}` avant le `{0}` afin de vous montrer qu'il n'y a pas d'ordre à respecter avec les marqueurs dans la chaine de caractère. 
 Le seul ordre qui est pris en compte, c'est celui après le `-f`,
