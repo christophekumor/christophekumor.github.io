@@ -6,7 +6,7 @@ permalink :
 tags:
    - Powershell
    - Variables
-   - Les Bases
+   - LesBases
 
 categories:
    - Powershell
