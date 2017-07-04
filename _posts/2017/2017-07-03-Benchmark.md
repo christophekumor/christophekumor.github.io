@@ -384,10 +384,9 @@ function Measure-MyScript {
     } 
     return $hash2;
 }
-
 ```
 
-#Conclusion
+# Conclusion
 
 And Voilà ! (Oui je sais..., mais j'aime bien cette expression)
 
