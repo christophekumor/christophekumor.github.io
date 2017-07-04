@@ -10,8 +10,7 @@ tags:
    - Optimisation
 categories:
    - Powershell
-   - Les Bases
-   - Astuces
+
 image:
  feature: headers/Time_1436x500.jpg
  categorie: categories/Time_300x300.png
