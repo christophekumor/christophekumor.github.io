@@ -9,7 +9,7 @@ tags:
    - Les Bases
 categories:
    - Powershell
-   - Les Bases
+   - LesBases
 image:
  feature: headers/Coding_1436x500.png
  categorie: categories/PS_300x300.png
