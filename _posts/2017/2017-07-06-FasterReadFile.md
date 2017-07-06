@@ -23,8 +23,7 @@ Afin de mettre en pratique le post précédent, j'ai fait pour vous un petit ben
 Au passage, ça permet de faire un point sur les différentes méthodes qui permettent de récupérer le contenu d'un fichier.
 
 # Les tests
-Afin de faire les tests, j'ai utilisé ma fonction `Measure-MyScript`, cette fonction est disponible dans l'article précédent ou sur mon repo :  
- <a href='https://github.com/christophekumor/Measure-MyScript' target = '_blank'>Measure-MyScript Repository
+Afin de faire les tests, j'ai utilisé ma fonction `Measure-MyScript`, cette fonction est disponible dans l'article précédent ou sur mon repo : <a href='https://github.com/christophekumor/Measure-MyScript' target = '_blank'>Measure-MyScript Repository
 </a>
 
 Chaque test sera fait 5 fois de suite afin de pouvoir faire une moyenne.
