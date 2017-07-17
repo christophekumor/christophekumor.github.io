@@ -1,7 +1,7 @@
 ---
 layout : post
 title: "Split : astuce à connaitre"
-description: "Astiuce pour la commande split qui peut rendre de bons services"
+description: "Astuce pour la commande split qui peut rendre de bons services"
 permalink:
 tags:
    - Powershell
