@@ -85,6 +85,6 @@ Paris le 16 Septembre 2017 pour le PowerShell Saturday Paris 2017
 
 and voila !
 
-Pour les anglophones, vous pouvez jeter un oeil à la <a href='https://richardspowershellblog.wordpress.com/2017/07/15/control-split-output/' target = '_blank'>source</a> de cet article, Richard à fait un exemple avec des dates de vacances
+Pour les anglophones, vous pouvez jeter un oeil à la <a href='https://richardspowershellblog.wordpress.com/2017/07/15/control-split-output/' target = '_blank'>source</a> de cet article, Richard a fait un exemple avec des dates de vacances
 
 
