@@ -45,6 +45,11 @@ body {
 			@include font-size(14);
 		}
 	}
+
+	h1 {
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+	}
 }
 
 /* 
