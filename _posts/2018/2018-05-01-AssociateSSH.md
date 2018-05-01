@@ -1,6 +1,6 @@
 ---
 layout : post
-title: "SSH : associer putty au type d'url 'ssh:\\'"
+title: "SSH : associer putty au type d'url 'ssh:\\\\'"
 description: "Outil de configuration de windows et lanceur de putty"
 permalink:
 tags:
