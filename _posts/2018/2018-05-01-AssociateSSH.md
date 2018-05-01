@@ -133,7 +133,7 @@ Pour ceux que cela intéresse, voici le contenu du fichier **puttyssh.cmd** sur 
 
 Sur votre poste, il sera différent en fonction du chemin de putty.exe
 
-```Batchfile
+```dosbatch
 @setlocal
 @echo off 
 
@@ -170,6 +170,7 @@ if DEFINED pass (
 
 start /D "C:\Program Files (x86)\PuTTY" putty.exe %param%
 )
+
 ```
 
 
