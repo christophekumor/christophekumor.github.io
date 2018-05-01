@@ -46,7 +46,7 @@ $base-color                      : rgba(#222,0.8);
 $body-color                      : #EAEDF2; //#e8e8e8; - 1D1E19
 $post-color                      : #fff; //#e8e8e8; - 272822
 $text-color                      : #000;//rgba(#222,0.8);
-$comp-color                      : $nav-color;
+$comp-color                      : complemednt(#222);
 $border-color                    : lighten($base-color,60);
 $link-color                      : #0E639C;//#F92672;//rgba//(#222,0.8);
 
