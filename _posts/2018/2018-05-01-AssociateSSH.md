@@ -133,7 +133,7 @@ Pour ceux que cela intéresse, voici le contenu du fichier **puttyssh.cmd** sur 
 
 Sur votre poste, il sera différent en fonction du chemin de putty.exe
 
-```dosbatch
+```batchfile
 @setlocal
 @echo off 
 
