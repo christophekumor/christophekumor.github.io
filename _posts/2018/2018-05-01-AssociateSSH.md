@@ -1,6 +1,6 @@
 ---
 layout : post
-title: "SSH : associer putty au type d'url ssh:\\"
+title: "SSH : associer putty au type d'url ssh:\\\"
 description: "Outil de configuration de windows et lanceur de putty"
 permalink:
 tags:
@@ -133,7 +133,7 @@ Pour ceux que cela intéresse, voici le contenu du fichier **puttyssh.cmd** sur 
 
 Sur votre poste, il sera différent en fonction du chemin de putty.exe
 
-```DOS
+```Batchfile
 @setlocal
 @echo off 
 
