@@ -21,7 +21,7 @@ image:
 
 # Introduction
 
-Dans mon entreprise, nous utilisons depuis peu WhatsUp Gold pour la supervision de notre infrastructure, or cet outil a la particularité de générer des liens sous la forme <a href='ssh://user@host.example.com' target = '_blank'>ssh://user@host.example.com</a> pour se connecter à un équipement depuis la map.
+Dans mon entreprise, nous utilisons depuis peu WhatsUp Gold pour la supervision de notre infrastructure, or cet outil a la particularité de générer des liens sous la forme <a href='ssh://user@host.example.com' target = '_blank'>ssh://host.example.com</a> pour se connecter à un équipement depuis la map.
 
 # Liens SSH
 

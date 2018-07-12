@@ -39,7 +39,7 @@ timezone: "Europe/Paris"
 future:      false  # publish future dated posts --  true, false (default) 
 highlighter: rouge
 markdown:    kramdown
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
