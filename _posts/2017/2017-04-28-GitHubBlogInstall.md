@@ -4,8 +4,8 @@ title: "Mettre en place son Blog sur GitHub"
 description: "Pas à Pas pour la mise en place d'un blog sur github"
 permalink:
 tags:
-   - blog
-   - github
+   - Blog
+   - Github
 categories:
    - GitHub
    - Tutorial

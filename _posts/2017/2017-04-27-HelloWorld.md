@@ -3,9 +3,9 @@ layout: post
 title: "Hello W0rld !!!"
 permalink:
 tags:
-    - info
+    - Info
 categories:
-    - blabla
+    - Blabla
 image:
   feature: headers/HelloWorld_1436x500.png
   categorie: categories/Speech_300x300.png
