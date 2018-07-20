@@ -54,7 +54,7 @@ Le site propose 51 mix de musique différents pour aider à la concentration tou
 ### <a title="Cliquez pour ouvrir le site" target="_blank" href="https://relaxdaily.net/stream/">relaxdaily.net</a>
 Musique de relaxation pour l'esprit, le corps et l'âme.
 
-<a title="Cliquez pour ouvrir le site" target="_blank" href="https://relaxdaily.net/stream/">![RelaxDaily](/images/articles/2018-07-12-Music4Coder/RelaxDaily-720x400.png)</a>
+<a title="Cliquez pour ouvrir le site" target="_blank" href="https://relaxdaily.net/stream/">![RelaxDaily](/images/articles/2018-07-12-Music4Coder/relaxdaily-720x400.png)</a>
 
 Relaxdaily est un projet de musique indépendant, il est basé sur la création et le partage de musique originale. Un ton doux et léger, souvent inspirant pour libérer votre énergie positive et tout votre potentiel.
 
@@ -158,7 +158,7 @@ Exemple sympa : <a title="Cliquez pour ouvrir le site" href="https://mynoise.net
 ### <a title="Cliquez pour ouvrir le site" target="_blank" href="https://coffitivity.com/">coffitivity.com</a>
 Coffitivity recré les sons ambiants d'un café pour stimuler votre créativité et vous aider à mieux travailler. 
 
-<a title="Cliquez pour ouvrir le site" target="_blank" href="https://coffitivity.com/">![Coffitivity](/images/articles/2018-07-12-Music4Coder/coffitivity-720x400.png)</a>
+<a title="Cliquez pour ouvrir le site" target="_blank" href="https://coffitivity.com/">![Coffitivity](/images/articles/2018-07-12-Music4Coder/Coffitivity-720x400.png)</a>
 
 Plutôt que de fournir des sons apaisants, Coffitivity fournit à l'utilisateur trois pistes adaptées de bruit de fond doux dans trois endroits différents.
 
