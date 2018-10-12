@@ -33,15 +33,15 @@ Vous savez que l'on peut capturer un groupe dans une chaine de caractère.
 
 Ci-dessous un exemple dans lequel je vais récupérer un groupe :
 
-```Powershell
+```powershell
 $string = 'param1;param2;param3;param4;param5;'
 
 $string -match '([a-z0-9]+);'
 
 $matches
 
-Name                           Value                                                                         
-----                           -----                                                                         
+Name                           Value
+----                           -----
 1                              param1
 0                              param1;
 ```
@@ -54,7 +54,7 @@ Cela correspond bien à ma demande.
 
 Dans ma chaine de caractères, il y a une répétition de ma recherche, je vais donc indiquer dans ma REGEX que mon pattern se répète plusieurs fois.
 
-```Powershell
+```powershell
 $string = 'param1;param2;param3;param4;param5;'
 
 $string -match '(?:([a-z0-9]+);)+'
@@ -73,7 +73,7 @@ Le résultat contient cette fois-ci le groupe du **dernier match** du pattern da
 
 Je pense que comme moi, vous vous attendiez à avoir le groupe de chaque match.
 
-```Powershell
+```powershell
 Résultat espéré :
 
 Match 1
@@ -107,31 +107,31 @@ Cette fonctionnalité change tout !! Elle vous permet d'analyser facilement les 
 
 Faisons un test avec le moteur .Net :
 
-```Powershell
+```powershell
 $string = 'param1;param2;param3;param4;param5;'
 
 $resultat = [regex]::Match($string ,'(?:([a-z0-9]+);)+')
 ``` 
 Regardons la différence entre le moteur powershell et le moteur .Net
 
-```Powershell
+```powershell
 #Powershell
 $Matches.GetType()
 
-IsPublic IsSerial Name                                     BaseType                                          
--------- -------- ----                                     --------                                          
+IsPublic IsSerial Name                                     BaseType
+-------- -------- ----                                     --------
 True     True     Hashtable                                System.Object
 
 #.Net
 $Resultat.GetType()
 
-IsPublic IsSerial Name                                     BaseType                                          
+IsPublic IsSerial Name                                     BaseType
 -------- -------- ----                                     --------
-True     True     Match                                    System.Text.RegularExpressions.Group              
+True     True     Match                                    System.Text.RegularExpressions.Group
 ```
 Regardons de plus près la variable **`$Resultat`**
 
-```Powershell
+```powershell
 $Resultat | gm
 
 TypeName : System.Text.RegularExpressions.Match
@@ -156,13 +156,13 @@ Value       Property   string Value {get;}
 
 Suite à ce résultat, nous allons utiliser la propriété `Groups` afin d'obtenir le ou les groupes renvoyés par notre recherche.
 
-```Powershell
+```powershell
 Groups      Property   System.Text.RegularExpressions.GroupCollection Groups {get;} 
 ```
 
 Afin de bien comprendre, je vais refaire l'exercice en mettant en comparaison les resultats du moteur powershell.
 
-```Powershell
+```powershell
 $string = 'param1;param2;param3;param4;param5;'
 
 #Powershell
@@ -198,7 +198,7 @@ Oui, mais....
 
 Faisons un petit focus sur le résultat du groupe. Pour cela, nous allons regarder la structure de l'object `$resultat.Groups[1]`
 
-```Powershell
+```powershell
 $resultat.Groups[1] | gm
 
   TypeName : System.Text.RegularExpressions.Group
@@ -218,7 +218,7 @@ Value       Property   string Value {get;}
 ```
 Parmi les méthodes et propriétés, celle qui va nous intéresser et qui est introduite par le moteur .Net est : 
 
-```Powershell
+```powershell
 Captures    Property   System.Text.RegularExpressions.CaptureCollection Captures {get;}
 ```
 
@@ -226,7 +226,7 @@ Cette propriété va nous permettre d'obtenir toutes les valeurs que le groupe r
 
 ### Démonstration :
 
-```Powershell
+```powershell
 $string = 'param1;param2;param3;param4;param5;'
 
 $resultat = [regex]::Match($string ,'(?:([a-z0-9]+);)+')
