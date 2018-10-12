@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Regex : les captures groupe avec .Net"
-description: "Ma sélection de sites pour travailler en musique."
+description: "Expressions régulières, résultat de groupes avec le moteur .Net"
 permalink:
 tags:
 - Powershell
