@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Regex : les captures groupe avec .Net"
+title: "Regex : les captures groupes avec .Net"
 description: "Expressions régulières, résultat de groupes avec le moteur .Net"
 permalink:
 tags:
