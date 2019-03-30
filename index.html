@@ -1,15 +1,15 @@
 ---
 layout: post-index
-title: 
+title:
 description: "Powerhell."
 tags: [Jekyll, theme, themes, responsive, blog, modern]
 comments: false
 image:
-  feature: My-Little-Powershell-Blog.png
-  credit: 
-  creditlink: 
+feature: PowerShellYogaBlog.png
+credit:
+creditlink:
 ---
- <!--<div class="grid" id="searchBar">
+<!--<div class="grid" id="searchBar">
          <div id="search">
              <form role="search" method="get" action="{{ site.url }}//search/">
                  <input id="searchString" name="searchString"
@@ -23,13 +23,18 @@ image:
 <article class="hentry">
   <header>
     {% if post.image.feature %}
-      <div class="entry-image-index">
-        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/images/{{ post.image.categorie }}" alt="{{ post.title }}"></a>
-      </div><!-- /.entry-image -->
+    <div class="entry-image-index">
+      <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img
+          src="{{ site.url }}/images/{{ post.image.categorie }}" alt="{{ post.title }}"></a>
+    </div><!-- /.entry-image -->
     {% endif %}
     <div class="entry-meta">
-      
-      <span class="entry-date date published updated"><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span>&nbsp;&nbsp;<i class="fa fa-user" aria-hidden="true"></i><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span>
+
+      <span class="entry-date date published updated"><i class="fa fa-calendar" aria-hidden="true"></i><time
+          datetime="{{ post.date | date_to_xmlschema }}"><a
+            href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span>&nbsp;&nbsp;<i
+        class="fa fa-user" aria-hidden="true"></i><span class="fn"><a href="{{ site.url }}/about/"
+          title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span>
       {% if site.reading_time %}
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
@@ -37,12 +42,20 @@ image:
       </span><!-- /.entry-reading-time -->
       {% endif %}
     </div><!-- /.entry-meta -->
-      <div class="entry-titre-index">
-    {% if post.link %}
-      <h1> <font color="#B1152D">{</font> <a href="{{ site.url }}{{ post.url }}" class="permalink" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title }}</a> <font color="#B1152D">}</font> </h1>
-    {% else %}
-      <h1> <font color="#B1152D">{</font> <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a> <font color="#B1152D">}</font> </h1>
-    {% endif %}
+    <div class="entry-titre-index">
+      {% if post.link %}
+      <h1>
+        <font color="#B1152D">{</font> <a href="{{ site.url }}{{ post.url }}" class="permalink" rel="bookmark"
+          title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title }}</a>
+        <font color="#B1152D">}</font>
+      </h1>
+      {% else %}
+      <h1>
+        <font color="#B1152D">{</font> <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}"
+          itemprop="url">{{ post.title }}</a>
+        <font color="#B1152D">}</font>
+      </h1>
+      {% endif %}
     </div>
   </header>
 </article><!-- /.hentry -->

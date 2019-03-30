@@ -8,3 +8,5 @@ Gemfile.lock
 .sass-cache
 .jekyll-metadata
 images/categories/Thumbs.db
+images/Thumbs.db
+images/headers/Thumbs.db
