@@ -43,12 +43,12 @@ body {
    ========================================================================== */
 
 $base-color                      : rgba(#222,0.8);
-$body-color                      : #E3DFC4; //#e8e8e8; - 1D1E19
-$post-color                      : #fff; //#e8e8e8; - 272822
+$body-color                      : #000306; //#e8e8e8; - 1D1E19
+$post-color                      : #051A34; //#e8e8e8; - 272822
 $text-color                      : #000;//rgba(#222,0.8);
 $comp-color                      : complemednt(#222);
 $border-color                    : lighten($base-color,60);
-$link-color                      : #0E639C;//#F92672;//rgba//(#222,0.8);
+$link-color                      : #13B5EC;//#F92672;//rgba//(#222,0.8);
 
 $primary                         : #222;
 $success                         : #5cb85c;
