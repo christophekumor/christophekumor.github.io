@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Asap|Lato|Open+Sans|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Asap|Lato:100,400|Open+Sans|Roboto:100,400');
 
 /* ==========================================================================
    SCSS Variables
@@ -16,7 +16,7 @@ $front-page-feature-image-height-max : 500px; //
    Typography
    ========================================================================== */
 
-$base-font                       : 'Asap','Lato', Calibri, Arial, sans-serif;
+$base-font                       : 'Roboto', Calibri, Arial, sans-serif;
 $heading-font                    : 'Lato';
 $Post-Title-Font                 : $base-font;
 $caption-font                    : $base-font;
@@ -48,7 +48,7 @@ $post-color                      : #F5F4F0; //#e8e8e8; - 272822
 $text-color                      : #432f21;//rgba(#222,0.8);
 $comp-color                      : complement(#222);
 $border-color                    : lighten($base-color,60);
-$link-color                      : #13B5EC;//#F92672;//rgba//(#222,0.8);
+$link-color                      : #1D150D;//#F92672;//rgba//(#222,0.8);
 
 $primary                         : #222;
 $success                         : #5cb85c;
