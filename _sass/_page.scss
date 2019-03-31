@@ -194,7 +194,7 @@ body {
 .entry-image {
 			@media #{$large} {
 			max-width: 800px;
-			margin: auto auto 30px auto;
+			margin: auto auto auto auto;
 		}
 
 	img {
