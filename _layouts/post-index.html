@@ -13,11 +13,6 @@
 {% include navigation.html %}
 
 <div class="entry-header">
-  {% if page.image.feature %}
-    <div class="entry-image">
-      <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
-    </div><!-- /.entry-image -->
-  {% endif %}
   <div class="header-title">
     <div class="header-title-wrap">
       <!-- Modif CK
@@ -26,6 +21,12 @@
       <h2>{{ page.title }}</h2>
     </div><!-- /.header-title-wrap -->
   </div><!-- /.header-title -->
+  {% if page.image.feature %}
+    <div class="entry-image">
+      <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
+    </div><!-- /.entry-image -->
+<div class="motto"><p>More than exercices.. a Philosophy !!</p></div>
+    {% endif %}
 </div><!-- /.entry-header -->
 
 <div id="main" role="main">

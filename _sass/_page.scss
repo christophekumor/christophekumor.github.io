@@ -1,23 +1,31 @@
 /* ==========================================================================
    Page layout
    ========================================================================== */
+$time: 30s;
 
 body {
 	margin: 0;
 	padding: 0;
-	width: 100%;
-		
-		background: 
-		    linear-gradient(
-$gradient
-		),
-		 url(/images/background.png);
-	
+	background-color:#C0DEED;
+	font-family: $base-font;
+	color: $text-color;
 }
 
 /* 
    Main content
    ========================================================================== */
+
+	 @keyframes float {
+	0% {
+			transform: scale(1);
+	}
+	50% {
+			transform: scale(1.1);
+	}
+	100% {
+			transform: scale(1);
+	}
+}
 
 .entry,
 .hentry {
@@ -26,6 +34,7 @@ $gradient
 	h1, h2, h3, h4, h5, h6, p, li {
 		word-wrap: break-word;
 	}
+
 }
 
 .entry-content {
@@ -64,8 +73,11 @@ $gradient
 
 .entry-header {
 	width: 100%;
-	overflow: hidden;
-	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
 }
 
@@ -203,33 +215,119 @@ $gradient
 			margin: auto auto auto auto;
 		}
 
-	img {
+	
+img {
 
-  width: 100%;
-  height: auto;
-  -ms-interpolation-mode: bicubic;
-	min-width: 50%;
-	//min-height: $feature-image-height; // match .entry-image min-height
-	}
+    width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    min-width: 50%;
+    //min-height: $feature-image-height; // match .entry-image min-height
 }
+			}
 
+
+    @keyframes blobber {
+        0% { border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%; }
+        5% { border-radius: 48% 52% 41% 59% / 66% 37% 63% 34%; }
+        10% { border-radius: 69% 31% 71% 29% / 67% 31% 69% 33%; }
+        15% { border-radius: 60% 40% 71% 29% / 63% 65% 35% 37%; }
+        20% { border-radius: 61% 39% 51% 49% / 57% 58% 42% 43%; }
+        25% { border-radius: 66% 34% 25% 75% / 47% 30% 70% 53%; }
+        30% { border-radius: 32% 68% 38% 62% / 65% 60% 40% 35%; }
+        35% { border-radius: 63% 37% 41% 59% / 35% 38% 62% 65%; }
+        40% { border-radius: 57% 43% 49% 51% / 55% 71% 29% 45%; }
+        45% { border-radius: 47% 53% 34% 66% / 65% 36% 64% 35%; }
+        50% { border-radius: 44% 56% 32% 68% / 69% 26% 74% 31%; }
+        55% { border-radius: 28% 72% 37% 63% / 71% 44% 56% 29%; }    
+        60% { border-radius: 38% 62% 35% 65% / 74% 53% 47% 26%; }
+        65% { border-radius: 73% 27% 46% 54% / 54% 47% 53% 46%; }
+        70% { border-radius: 75% 25% 47% 53% / 49% 53% 47% 51%; }
+        75% { border-radius: 62% 38% 43% 57% / 55% 60% 40% 45%; }
+        80% { border-radius: 41% 59% 65% 35% / 73% 50% 50% 27%; }
+        85% { border-radius: 55% 45% 57% 43% / 73% 61% 39% 27%; }
+        90% { border-radius: 74% 26% 33% 67% / 40% 65% 35% 60%; }
+        95% { border-radius: 58% 42% 57% 43% / 53% 45% 55% 47%; }
+        100% { border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%; }
+    }
+
+    @keyframes cobler {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 100% 0%;
+        }
+    }
+
+    @keyframes wobbler {
+        0% {
+            transform: rotateZ(8deg);
+        }
+        100% {
+            transform: rotateZ(-8deg);
+        }
+    }
 // Feature Image height on Front Page
 #post-index {
 
 	&.feature .header-title {
 		height: $front-page-feature-image-height;
+
 	}
 
 	.entry-image {
 		min-height: $front-page-feature-image-height;
 
+		    display: block;
+    position: relative;
+    //width: 200px;
+    box-sizing: content-box;
+border: 8px white solid;
+border-radius: 50%;
+box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    overflow: visible;
+    border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
+    background: linear-gradient(to right, #23D5AB, #23A6D5, #E73C7E, #EE7752, #DDD6F3);
+        background-size: 500% 100%;
+        animation: 
+        blobber $time 0s linear infinite,
+        cobler $time 0s linear infinite alternate;
+    
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            bottom: 5px;
+            left: 5px;
+            //background-color: #000;
+            //background-image: url(https://images.unsplash.com/photo-1495429789562-21d697f29b02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
+            //background-repeat: no-repeat;
+            //background-size: cover;
+            //background-position: center;
+            mix-blend-mode: multiply;
+            animation:
+            blobber $time 0s ease-in-out infinite,
+            wobbler 15s 0s linear infinite alternate;
+				}
+				
 		img {
 			//min-height: $front-page-feature-image-height;
 			//max-height: 500px;
 			max-width: 100%;
-			height: auto;
+			transform: translatey(0px);
+animation: float 6s ease-in-out infinite;
+padding-bottom: -50px;
+    width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    min-width: 50%;
 
 		}
+
+
 	}
 }
 
@@ -306,6 +404,7 @@ $gradient
 
 	.entry-reading-time {
 		float: right;
+		padding-right: 10px;
 	}
 }
 
@@ -510,10 +609,19 @@ display: block;
 /* 
    Post index
    ========================================================================== */
+body#post-index {
+
+background: #c0deed url(https://abs.twimg.com/images/themes/theme1/bg.png) center top repeat-x;
+animation: awan-animasi 10s linear infinite;
+-ms-animation: awan-animasi 10s linear infinite;
+-moz-animation: awan-animasi 10s linear infinite;
+-webkit-animation: awan-animasi 10s linear infinite;
+box-sizing: content-box;
+}
 
 #post-index {
 	#main {
-		margin: 40px 2px 20px 2px;
+		margin: 0px 2px 20px 2px;
 
 		@media #{$medium} {
 			margin-left: 20px;
@@ -522,7 +630,7 @@ display: block;
 
 		@media #{$large} {
 			max-width: 800px;
-			margin-top: 50px;
+			margin-top: 40px;
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -539,7 +647,7 @@ table-layout: auto;
 		background-color: $post-color;
 
 		box-shadow: 0 0 0 0, 0 6px 12px rgba($base-color,0.1);
-		border-radius: 3px;
+		border-radius: 10px;
 		margin-bottom: 20px;
 		padding: 0px 0px;
 
@@ -552,17 +660,21 @@ table-layout: auto;
 			padding: 0px 0px;
 		}
 	}
+
 }
 
+.entry-header {
+	margin-top: 50px;
+}
 .entry-image-index {
 display: table-cell;
 vertical-align: middle;
 width: 25%;
 background-color: #EAEDF2;
-	img {
-		border-radius: 3px 3px 0 0; // round image corners
-	}
 
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+	overflow: hidden;
 }
 
 .entry-titre-index {
@@ -576,6 +688,17 @@ display: block;
 
 
 
+}
+
+.motto {
+		@include font-size(36);
+	font-family: $motto-font;
+	color: rgb(10, 47, 71);
+	margin-bottom: 0px;
+
+	p{
+		margin-bottom: 0px;
+	}
 }
 /* 
    Footer
@@ -682,4 +805,46 @@ display: block;
            border-radius: 0;
          }
        }
-     }
+		 }
+		 
+
+		 //Cloud
+		 @keyframes awan-animasi {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    };
+}
+
+@-webkit-keyframes awan-animasi {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    };
+}
+
+@-ms-keyframes awan-animasi {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    };
+}
+
+@-moz-keyframes awan-animasi {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    };
+}
