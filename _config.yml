@@ -1,11 +1,11 @@
-title: "PowerShell Yo.ga"
+title: "PowerShell au top"
 description: "Blog about Powershell"
 disqus_shortname: "MyLittlePowershellBlog"
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url: https://powershellyo.ga
+url: https://powershell.esto.top
 
 # Owner/author information
 owner: 
